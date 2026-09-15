@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Engineering Portfolio</title>
+<meta name="description" content="Engineering project portfolio.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<a class="skip" href="#sheet">Skip to content</a>
+
+<!-- Mobile bar -->
+<header class="topbar">
+  <span class="topbar-name" id="topbarName">Portfolio</span>
+  <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="sidenav">
+    <span class="menu-bars" aria-hidden="true"></span>
+    <span class="menu-label">Index</span>
+  </button>
+</header>
+
+<!-- Drawing index / navigation -->
+<nav class="sidenav" id="sidenav" aria-label="Project index">
+  <div class="sidenav-head">
+    <span class="sidenav-name" id="navName">Portfolio</span>
+    <span class="sidenav-role" id="navRole"></span>
+  </div>
+  <ul class="sheetlist" id="sheetlist"></ul>
+  <div class="sidenav-foot">
+    <span id="navEmail"></span>
+  </div>
+</nav>
+
+<div class="nav-scrim" id="navScrim" hidden></div>
+
+<main id="sheet" class="sheet" tabindex="-1"></main>
+
+<!-- Figure viewer -->
+<div class="viewer" id="viewer" hidden role="dialog" aria-modal="true" aria-label="Figure viewer">
+  <button class="viewer-close" id="viewerClose" aria-label="Close figure">Close</button>
+  <button class="viewer-nav viewer-prev" id="viewerPrev" aria-label="Previous figure">&#8249;</button>
+  <figure class="viewer-stage">
+    <img id="viewerImg" alt="">
+    <figcaption id="viewerCap"></figcaption>
+  </figure>
+  <button class="viewer-nav viewer-next" id="viewerNext" aria-label="Next figure">&#8250;</button>
+</div>
+
+<script src="content/site.js"></script>
+<script src="content/projects.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
